@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-e*up@8cjhn-s*=6@d)qo!i9o%^4-3)^ued2_yv*_%w0#g7&*ia
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','.us-south.codeengine.appdomain.cloud']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'firstapp.apps.FirstappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
